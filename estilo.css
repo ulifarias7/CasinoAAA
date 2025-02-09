@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+
+body {
+    /* font-family: "Inter", sans-serif; */
+    background-image: url('./img/fondodecanva.png');
+    background-size: contain; /* para que la imagen de fondo cubra todo el cuerpo */
+    background-position: center; /* para centrar la imagen de fondo */
+    margin: 0;
+    padding: 0;
+    color: #f6f4ee;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 182px;
+    margin-bottom: -5px;
+    animation: pulse 2s infinite;
+    
+}
+
+.main-title {
+    margin-top: 0; 
+    padding-top: 0;
+    text-align: center;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.main-title p {
+    font-size: 30px;
+    color: #efefef;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(250, 248, 248, 0.5);
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
+    animation: pulse 2s infinite;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(90deg, #aa2f23, #ff0000);
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(136, 41, 41, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.button img {
+    width: 30px;
+}
+
+.info {
+    padding: 5px;
+    text-align: center; 
+    animation: fadeIn 1.5s ease-in-out;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.info h2{
+    font-size: 22px;
+    margin: 0; 
+    line-height: 1; 
+    color: #f6f3f3;
+    text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.5);
+}
+
+.warning-box {
+    background-color: #a21c1c;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.5);
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #ff0019;
+    box-shadow: 0 0 10px rgba(160, 16, 16, 0.8);
+    margin-top: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+    font-family: "Inter", sans-serif;
+}
+    
+
+/* Nuevas animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

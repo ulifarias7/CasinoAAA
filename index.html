@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>casino pixel</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/Imagen_de_WhatsApp_2025-01-14_a_las_21.36.26_ef1bf932-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./img/337b59eb68bbf17d9741f136adb4af13-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header class="logo animate__animated animate__flip">
+        <img src="./img/337b59eb68bbf17d9741f136adb4af13-removebg-preview.png" alt="logo casino">
+    </header>
+
+    <main>
+        <section class="main-title flip-card">
+            <p>Cajero verificado <br>
+            Pagos en el acto <br>
+            24hs!
+            </p>
+        </section>
+
+        <section class="whatsapp">
+            <button class="button" id="whatsappButton">
+                <span>Whatsapp</span>
+                <img src="./img/whatsapp_5968967.png" alt="Whatsapp">
+            </button>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("whatsappButton").addEventListener("click", function() {
+            const telefono = "549";
+            const mensaje = "Hola! me quiero crear un usuario, Mi nombre es: .";
+            const link = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+            window.open(link, '_blank');
+        });
+    </script>
+    
+    <div class="info">
+        <h2>Mínimo de carga: $ 3000 </h2>
+        <div class="warning-box">
+            <p>🚫 PROHIBIDO PARA MENORES DE 18 AÑOS 🚫</p>
+            <p>El juego conlleva riesgos financieros. Juega con responsabilidad.</p>
+        </div>
+      </div>
+</body>
+</html>
