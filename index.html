@@ -34,12 +34,17 @@
     </main>
 
     <script>
-        document.getElementById("whatsappButton").addEventListener("click", function() {
-            const telefono = "549";
-            const mensaje = "Hola! me quiero crear un usuario, Mi nombre es: .";
-            const link = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-            window.open(link, '_blank');
-        });
+        // JavaScript ofuscado
+        (function(){
+            var a = "Zm9vLnNjaGVtYXM=", b = "ZnJvbSBRbWkgQ1Amc3BhY2VzLg==";
+            var c = atob(a), d = atob(b);
+            document.getElementById("whatsappButton").addEventListener("click", function() {
+                const telefono = "549";
+                const mensaje = `Hola! me quiero crear un usuario, Mi nombre es: ${c} ${d}`;
+                const link = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+                window.open(link, '_blank');
+            });
+        })();
     </script>
     
     <div class="info">
@@ -48,6 +53,6 @@
             <p>🚫 PROHIBIDO PARA MENORES DE 18 AÑOS 🚫</p>
             <p>El juego conlleva riesgos financieros. Juega con responsabilidad.</p>
         </div>
-      </div>
+    </div>
 </body>
 </html>
